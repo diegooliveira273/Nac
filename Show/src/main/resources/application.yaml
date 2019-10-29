@@ -1,0 +1,16 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /shows
+
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:~/fiapdb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    username: fiap
+    password: fiap
